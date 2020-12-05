@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  eks-container-insights:
+  - apiVersion: v1
+    appVersion: "1.247345"
+    created: "2020-12-05T16:17:46.382455733Z"
+    description: A Helm chart to enable container logs (and later metrics) in cloudwatch
+    digest: 162d849f862f56ebd9482525e90b205ad7c4885fb1c4dfb2325dd623b154a37a
+    name: eks-container-insights
+    urls:
+    - https://github.com/superluminar-io/helm-charts/releases/download/eks-container-insights-0.0.2/eks-container-insights-0.0.2.tgz
+    version: 0.0.2
+generated: "2020-12-05T16:17:46.25719887Z"
