@@ -1,0 +1,16 @@
+clusterName:
+aws:
+  region:
+cwAgent:
+  image:
+    repository: ''
+    tag: ''
+    pullPolicy: IfNotPresent
+  serviceAccount:
+    name:
+
+fluentd:
+  image:
+    repository: ''
+    tag: ''
+    pullPolicy: IfNotPresent
