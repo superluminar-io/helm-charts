@@ -30,7 +30,7 @@ metadata:
   name: cloudwatch-agent-role-binding
 subjects:
   - kind: ServiceAccount
-    name: "{{ .Values.serviceAccount.name }}"
+    name: "{{ .Values.cwAgent.serviceAccount.name }}"
     namespace: "{{ .Release.Namespace }}"
 roleRef:
   kind: ClusterRole
