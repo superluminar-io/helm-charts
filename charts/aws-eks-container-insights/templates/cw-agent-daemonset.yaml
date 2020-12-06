@@ -15,7 +15,7 @@ spec:
       containers:
         - name: cloudwatch-agent
           image: "{{ .Values.cwAgent.image.repository }}:{{ .Values.cwAgent.image.tag }}"
-          imagePullPolicy: "{{ .Values.image.pullPolicy }}"
+          imagePullPolicy: "{{ .Values.cwAgent.image.pullPolicy }}"
           #ports:
           #  - containerPort: 8125
           #    hostPort: 8125
