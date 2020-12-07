@@ -14,3 +14,5 @@ fluentd:
     repository: ''
     tag: ''
     pullPolicy: IfNotPresent
+  serviceAccount:
+    name:

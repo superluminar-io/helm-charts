@@ -14,7 +14,7 @@ spec:
       annotations:
         configHash: "{{ include (print $.Template.BasePath "/fluentd-configmap.yaml") . | sha256sum }}"
     spec:
-      serviceAccountName: fluentd
+      serviceAccountName: "{{ .Values.fluentd.serviceAccount.name }}"
       terminationGracePeriodSeconds: 30
       # Because the image's entrypoint requires to write on /fluentd/etc but we mount configmap there which is read-only,
       # this initContainers workaround or other is needed.
