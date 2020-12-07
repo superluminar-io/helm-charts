@@ -82,4 +82,4 @@ spec:
           hostPath:
             path: /dev/disk/
       terminationGracePeriodSeconds: 60
-      serviceAccountName: {{ .Values.cwAgent.serviceAccount.name }}"
+      serviceAccountName: "{{ .Values.cwAgent.serviceAccount.name }}"
