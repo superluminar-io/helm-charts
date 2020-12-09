@@ -3,6 +3,15 @@ entries:
   aws-eks-container-insights:
   - apiVersion: v1
     appVersion: "1.247345"
+    created: "2020-12-09T13:12:06.011791804Z"
+    description: A Helm chart to enable container logs (and later metrics) in cloudwatch
+    digest: 10097fd5943ccebdd43e6091bd39a9b6e27630223cd6711e78a35ea22d06bb1e
+    name: aws-eks-container-insights
+    urls:
+    - https://github.com/superluminar-io/helm-charts/releases/download/aws-eks-container-insights-0.0.9/aws-eks-container-insights-0.0.9.tgz
+    version: 0.0.9
+  - apiVersion: v1
+    appVersion: "1.247345"
     created: "2020-12-09T10:13:22.053245454Z"
     description: A Helm chart to enable container logs (and later metrics) in cloudwatch
     digest: fb0ffd81b38d2d3a20e6a4b80e78845c1e074805c07edeaf333e973e794737b1
