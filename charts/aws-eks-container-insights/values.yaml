@@ -16,3 +16,5 @@ fluentd:
     pullPolicy: IfNotPresent
   serviceAccount:
     name:
+  log_group:
+    retention_in_days: 90

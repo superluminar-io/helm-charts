@@ -154,6 +154,7 @@ data:
         log_stream_name_key stream_name
         remove_log_stream_name_key true
         auto_create_stream true
+        retention_in_days {{ .Values.fluentd.log_group.retention_in_days }}
         <buffer>
           flush_interval 5
           chunk_limit_size 2m
