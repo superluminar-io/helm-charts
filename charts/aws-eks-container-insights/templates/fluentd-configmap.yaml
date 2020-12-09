@@ -242,6 +242,7 @@ data:
         log_group_name "/aws/containerinsights/#{ENV.fetch('CLUSTER_NAME')}/dataplane"
         log_stream_name_key stream_name
         auto_create_stream true
+        retention_in_days {{ .Values.fluentd.log_group.retention_in_days }}
         remove_log_stream_name_key true
         <buffer>
           flush_interval 5
@@ -313,6 +314,7 @@ data:
         log_stream_name_key stream_name
         remove_log_stream_name_key true
         auto_create_stream true
+        retention_in_days {{ .Values.fluentd.log_group.retention_in_days }}
         <buffer>
           flush_interval 5
           chunk_limit_size 2m
